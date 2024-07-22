@@ -1,44 +1,29 @@
-// For learning Aim.
-const person = {
-     firstName: 'musa',
-     middleName: 'justini',
-     lastName: 'chitemo',
-     age: 27,
-     fullname(){
-          console.log(`${this.firstName} ${this.middleName} ${this.lastName}`);
-     }
-}
-person.fullname()
-
-// person.forEach((onePerson)=>{
-//      console.log(`my name is ${onePerson}`);
-// })
-
-
-const students = ['mussa', 'justini', 'jonathan', 'chitemo']
-
-students.forEach((student)=>{
-     console.log(`My name is ${student}`);
-});
-
-for(i =0; i < students.length; i++){
-     console.log(`my name is ${students[i]}`);
-}
-
-for(i = 0; i < students.length; i++){
-     console.log('my name is ' + students[i]);
+function person(fName, lName){
+     this.fName = fName;
+     this.lName = lName;
 };
 
-students.push('juma');
+const person1 = new person('musa', 'justini');
+const person2 = new person('jonathan', 'chitemo');
 
-const arr1 = new Array('mussa', 'justini');
-console.table(arr1);
+person.prototype.fullName  = function(){
+     return console.log(`My full name is ${this.fName} ${this.lName}`);
+};
 
-const obj = new Object({
-     location: 'dodoma',
-     country: 'tanzania'
-});
+person1.fullName()
+person2.fullName()
 
-console.table(obj)
+function student(name, school){
+     this.name = name;
+     this.school = school;
+}
 
+const student1 = new student('musa', 'majawanga');
+const student2 = new student('Jonathan', 'Emeriko');
 
+student.prototype.nameSchool = function(){
+     return console.log(`My name is ${this.name}, My school name is ${this.school}`);
+}
+
+student1.nameSchool()
+student2.nameSchool()

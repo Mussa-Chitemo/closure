@@ -81,9 +81,39 @@ Ordered List: This is by using numbers, consider the example below which is as t
 
 Table in the markdown 
 
+##ALERTS
+You can use the alerts in the markdown, but this are the rendered with the special color, during the use of alert make sure you are using at once to avoid the overload of the leader, some of the alerts used in the markdwon includes TIP, COUTION, IMPORTANT & WARNING.
+In writting the alerts in the markdown always start with the greater symbol followed by the squire bracket and inside the squire bracket you should start with the exclamation consider example below.
+
+>[!TIP]
+>This is tip alert in the markdown.
+
+>[!IMPORTANT]
+>This is an important alert in the markdown.
+
+>[!WARNING]
+>Also thi is the warning alert in the markdown.
+
+>[!COUTION]
+>This is the coution alert in the markdown.
+
+Comments in the markdown
+Also you can hide he content in the markdown by commenting it, consinder the example below.
+
+<!-- This content will not appear It's hided by commenting It -->
+
 name|age|location
 -----------------
 musa|27|gairo
+
+This is <sub>subscript</sub>
+
+This is <sup>superscript</sup>
+
+Also you can mention people in the markdown such as @Mussa-Chitemo.
+:EMOJICODE:
+
+
 
 >This is blockquotes.
 
@@ -95,4 +125,4 @@ You can include the blcok of code by using three backtick as the following.
   }
  myFunction(mussa)```
 
-//
+XXXXXXXXX MY name is mussa XXXXXXX
